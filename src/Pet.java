@@ -4,11 +4,14 @@
 //The C++ code will be up once I get C++ running in Eclipse
 //Pet Program Using Inheritance
 public class Pet {
-	private String name;
-	private int age;
-	private double height;
-	private double weight;
-	private enum jobs {NULL};
+	public String name;
+	public int age;
+	public double height;
+	public double weight;
+	public enum jobs {NULL};
+	//Were probably not going to use this enumeration a lot
+	//Add a Person class so we can use these jobs for
+	//Virtual human good
 	public void Walk(double distance)
 	{
 		double weight_lost = distance / 75.0;
