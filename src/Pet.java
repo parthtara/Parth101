@@ -8,10 +8,26 @@ public class Pet {
 	public int age;
 	public double height;
 	public double weight;
-	public enum jobs {NULL};
+	//public enum jobs {NULL};
 	//Were probably not going to use this enumeration a lot
 	//Add a Person class so we can use these jobs for
 	//Virtual human good
+	public void Set_name(String n)
+	{
+		name = n;
+	}
+	public void Set_age(int a)
+	{
+		age = a;
+	}
+	public void Set_height(double h)
+	{
+		height = h;
+	}
+	public void Set_weight(double w)
+	{
+		weight = w;
+	}
 	public void Walk(double distance)
 	{
 		double weight_lost = distance / 75.0;
@@ -21,7 +37,8 @@ public class Pet {
 	}
 	public void Feed(double food)
 	{
-		double weight_gain = distance / 50.0;
+		double weight_gain = food / 50.0;
+		//Sorry, there was an error above in the last commit
 		//For every 50 pounds, the pet gains 1 base unit into its weight
 		weight = weight+weight_gain;
 		//This is to gain and apply the weight gain double
